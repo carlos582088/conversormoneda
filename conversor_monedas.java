@@ -172,7 +172,7 @@ private static final int DECIMALS=2;	//Nos ayuda a mentener el formato de solo d
             }
  }     }
                          	                        	            	                                
- // se crean condiciones de forma privada para mandarlas llamar desde la misma clase 
+ // se crean condiciones de forma privada para mandarlas llamar desde la misma clase moendas
     
     private static void convertirDolaresAPesos(double cantidad) {
     BigDecimal dolar = new BigDecimal(Double.toString(cantidad)).multiply(new BigDecimal("17.02")).setScale(2, RoundingMode.HALF_UP);
