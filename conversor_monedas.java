@@ -76,8 +76,7 @@ private static final int DECIMALS=2;	//Nos ayuda a mentener el formato de solo d
                             } else {
                                 JOptionPane.showMessageDialog(null, "Opción no válida", "Alerta", JOptionPane.WARNING_MESSAGE);
                             }
-
-                            
+          
                             
            //creamos las condiciones de uso de los botones por eso crea el boolean para asegurar si es verdadero o falso                  
                             int adicional = JOptionPane.showInternalConfirmDialog(null, "¿Desea continuar en el programa?", "información", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
@@ -173,7 +172,7 @@ private static final int DECIMALS=2;	//Nos ayuda a mentener el formato de solo d
             }
  }     }
                          	                        	            	                                
- //secrean las condiciones con las cuales se van hacer las conversiones del programa 
+ // se crean condiciones de forma privada para mandarlas llamar desde la misma clase 
     
     private static void convertirDolaresAPesos(double cantidad) {
     BigDecimal dolar = new BigDecimal(Double.toString(cantidad)).multiply(new BigDecimal("17.02")).setScale(2, RoundingMode.HALF_UP);
