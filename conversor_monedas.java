@@ -1,5 +1,6 @@
 package conversor_de_monedas;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import java.text.DecimalFormat;   //libreria para darle formato a los decimales
 import java.math.BigDecimal;      //libreria para hacer los decimales mas exactos 
@@ -8,20 +9,38 @@ import conversor_de_monedas.Pesoadolar;
 import conversor_de_monedas.Pesosaeuros;
 import conversor_de_monedas.pesosalibras;
 import conversor_de_monedas.pesosayenes;
-
+import conversor_de_monedas.estilo;
+import java.awt.Image;
 
 
 public class conversor_monedas {
+	
 private static final int DECIMALS=2;	//Nos ayuda a mentener el formato de solo dos decimales
 
  public static void main(String[] args) {
+	 
+	 
       	 
 	 boolean continuar = true; //se crea el bollean para darle un ciclo al boton si se sigue dentro del programa, se cnecal
-
+	 
+	 
         while (continuar) {
-            String[] opciones = {"Conversor de Monedas", "Conversor de Temperatura"};
-            String opcionvalida = (String) JOptionPane.showInputDialog(null, "Seleccione una opción", "Sistema de conversión", JOptionPane.INFORMATION_MESSAGE, null, opciones, opciones[0]);
+                            
+                                                                                                                             // creamos Ruta de la imagen
+            String rutaImagen = "C:\\Users\\Carlos\\Documents\\alura\\java\\conversor_de_monedas\\cambio.png";
+            int ancho= 200;
+            int alto = 200;
+                                                                                                                             //  Crear un objeto ImageIcon con la imagen
+            ImageIcon icon = new ImageIcon("C:\\Users\\Carlos\\Documents\\alura\\java\\conversor_de_monedas\\cambio.png");            
+            Image image = icon.getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT);
+            icon = new ImageIcon(image);
+            Object[] opciones = {"Conversor de Monedas", "Conversor de Temperatura"};
+         
+            //String opcionvalida = (String) JOptionPane.showInputDialog(null, "Seleccione una opción", "Sistema de conversión", JOptionPane.PLAIN_MESSAGE, null, opciones, opciones[0]);
+            String opcionvalida = (String) estilo.mostrarInputDialog("Seleccione una opción", "Sistema de conversión", opciones, opciones[0],icon);
 
+            
+            
             if (opcionvalida.equals("Conversor de Monedas")) {
                 String valor = JOptionPane.showInputDialog(null, "Ingresa el valor a convertir", "Selecciona una opción", JOptionPane.PLAIN_MESSAGE);
 
