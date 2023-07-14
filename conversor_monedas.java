@@ -11,6 +11,9 @@ import conversor_de_monedas.pesosalibras;
 import conversor_de_monedas.pesosayenes;
 import conversor_de_monedas.estilo;
 import java.awt.Image;
+import javax.swing.*;
+import java.awt.*;
+;
 
 
 public class conversor_monedas {
@@ -20,24 +23,16 @@ private static final int DECIMALS=2;	//Nos ayuda a mentener el formato de solo d
  public static void main(String[] args) {
 	 
 	 
-      	 
 	 boolean continuar = true; //se crea el bollean para darle un ciclo al boton si se sigue dentro del programa, se cnecal
 	 
 	 
         while (continuar) {
-                            
-                                                                                                                             // creamos Ruta de la imagen
-            String rutaImagen = "C:\\Users\\Carlos\\Documents\\alura\\java\\conversor_de_monedas\\cambio.png";
-            int ancho= 200;
-            int alto = 200;
-                                                                                                                             //  Crear un objeto ImageIcon con la imagen
-            ImageIcon icon = new ImageIcon("C:\\Users\\Carlos\\Documents\\alura\\java\\conversor_de_monedas\\cambio.png");            
-            Image image = icon.getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT);
-            icon = new ImageIcon(image);
-            Object[] opciones = {"Conversor de Monedas", "Conversor de Temperatura"};
+                                                                                                                                              // creamos Ruta de la imagen para ventana inicial 
+            
+             Object[] opciones = {"Conversor de Monedas", "Conversor de Temperatura"};
          
             //String opcionvalida = (String) JOptionPane.showInputDialog(null, "Seleccione una opción", "Sistema de conversión", JOptionPane.PLAIN_MESSAGE, null, opciones, opciones[0]);
-            String opcionvalida = (String) estilo.mostrarInputDialog("Seleccione una opción", "Sistema de conversión", opciones, opciones[0],icon);
+            String opcionvalida = (String) estilo.mostrarInputDialog("Seleccione una opción", "Sistema de conversión", opciones, opciones[0]);
 
             
             
