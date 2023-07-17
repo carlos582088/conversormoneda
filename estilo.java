@@ -1,5 +1,6 @@
 package conversor_de_monedas;
 
+import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -7,6 +8,7 @@ import javax.swing.JOptionPane;
 import java.awt.Dimension;
 import javax.swing.UIManager;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
@@ -17,7 +19,6 @@ public class estilo {
  private static ImageIcon icon = new ImageIcon ("C:\\Users\\Carlos\\Documents\\alura\\java\\conversor_de_monedas\\cambio.png");
 
     
-
     
     public static String mostrarInputDialog( Object message, String title, Object[] options, Object initialValue) {
         
@@ -34,24 +35,34 @@ public class estilo {
         // Modificar el color del recuadro
         UIManager.put("OptionPane.background", new Color(0,0,139)); // Cambiamos el color de fondo a amarillo
         UIManager.put("Panel.background", new Color(0, 0, 139));     // Cambiamos  el color de fondo del panel interno a amarillo
-        UIManager.put("OptionPane.messageForeground",Color.yellow); // Cambiamos el color del texto del mensaje a verde
+   //     UIManager.put("OptionPane.messageForeground",Color.yellow); // Cambiamos el color del texto del mensaje a verde
      
     
         // Redimensionar la imagen al tamaño especificado
         Image imagenmaster = icon.getImage();
-        int width = 50; // Ancho deseado para la imagen
-        int height = 50; // Alto deseado para la imagen
+        int width = 150; // Ancho deseado para la imagen
+        int height = 150; // Alto deseado para la imagen
         Image resizedImage = imagenmaster.getScaledInstance(width, height, Image.SCALE_SMOOTH);
         ImageIcon resizedIcon = new ImageIcon(resizedImage);
 
 
-     
-       // Crear el panel con la imagen centrada
+       // Creamos el panel con la imagen centrada
        JPanel panel = new JPanel(new BorderLayout());
        JLabel label = new JLabel(resizedIcon);
        JLabel labela = new JLabel(icon);
        panel.add(label, BorderLayout.CENTER);
+       
+       
+       
+    // Creamos el panel para el botón
+       JPanel buttonPanel = new JPanel();
+       JButton button = new JButton("Botón");
+       buttonPanel.add(button);
 
+       // Agregamos el panel del botón al panel principal
+       panel.add(buttonPanel, BorderLayout.PAGE_START);
+
+       
        
        //para  mostrar imagen en el modulo pricipal 
        JLabel mensajeinicial = new JLabel(message.toString());
@@ -59,6 +70,7 @@ public class estilo {
        panel.add(mensajeinicial, BorderLayout.PAGE_END);
        mensajeinicial.setHorizontalAlignment(SwingConstants.CENTER);
        mensajeinicial.setForeground(Color.WHITE);
+       mensajeinicial.setPreferredSize(new Dimension(0,200));            //se modifica la posicion del mensaje inicial (ancho, altura)
         
         // Mostrar el cuadro de diálogo personalizado
         return (String) JOptionPane.showInputDialog(null,panel,title, JOptionPane.PLAIN_MESSAGE, null, options, initialValue);
