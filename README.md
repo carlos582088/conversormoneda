@@ -2,7 +2,7 @@
 
 <div style="display: flex;">
   <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 33%;">
-  <br>
+  
   <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 33%;">
 </div>
 
