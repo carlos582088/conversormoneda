@@ -23,8 +23,7 @@ public class faracel extends conversion_herencia {
       //    SUBTRATC restar el valor ingresado      
     	BigDecimal resultado = valor.subtract(new BigDecimal ("32")).multiply(new BigDecimal("5")).divide(new BigDecimal("9"), 2,RoundingMode.HALF_UP);
         String resultadoFormateado = formatearResultado(resultado);
-        JOptionPane.showMessageDialog(null, "La conversión a Grados kelvin es de: " + resultadoFormateado, "Sistema de conversión", JOptionPane.PLAIN_MESSAGE);
-    }
+        estilo.MostrarMensajeDialog(null, "<HTML><b>La conversión a Grados Centigrados</b><br><div align=\"center\"> Es de : " + resultadoFormateado +"</div></HTML>", "Sistema de conversión");    }
 }
 
 

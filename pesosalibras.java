@@ -19,7 +19,9 @@ import java.math.RoundingMode;
 		    	
 		    	BigDecimal resultado = valor.multiply(conversion);
 		        String resultadoFormateado = formatearResultado(resultado);
-		        JOptionPane.showMessageDialog(null, "La conversión a libras esterlinas es de: " + resultadoFormateado, "Sistema de conversión", JOptionPane.PLAIN_MESSAGE);
+		        
+		        estilo.MostrarMensajeDialog(null, "<HTML><b>La conversión de Pesos a Libras</b><br><div align=\"center\"> Es de : " + resultadoFormateado +"</div></HTML>", "Sistema de conversión");
+
 
 		    }
 		

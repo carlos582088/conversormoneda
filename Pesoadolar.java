@@ -17,7 +17,7 @@ public class Pesoadolar extends conversion_herencia {
     	
     	BigDecimal resultado = valor.multiply(conversion);
         String resultadoFormateado = formatearResultado(resultado);
-        JOptionPane.showMessageDialog(null, "La conversión a dolares es de: " + resultadoFormateado, "Sistema de conversión", JOptionPane.PLAIN_MESSAGE);
+        estilo.MostrarMensajeDialog(null, "<HTML><b>La conversión de Pesos a Dolares</b><br><div align=\"center\"> Es de : " + resultadoFormateado +"</div></HTML>", "Sistema de conversión");
 
     }
 }

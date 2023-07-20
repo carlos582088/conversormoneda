@@ -24,7 +24,6 @@ public class centafara extends conversion_herencia {
     	
     	BigDecimal resultado = valor.multiply(new BigDecimal("9").divide(new BigDecimal("5"), 2, RoundingMode.HALF_UP)).add(new BigDecimal("32"));
         String resultadoFormateado = formatearResultado(resultado);
-        JOptionPane.showMessageDialog(null, "La conversión a Grados Fahrenheit  de: " + resultadoFormateado, "Sistema de conversión", JOptionPane.PLAIN_MESSAGE);
-
+        estilo.MostrarMensajeDialog(null, "<HTML><b>La conversión a Grados Fahrentheit</b><br><div align=\"center\"> Es de : " + resultadoFormateado +"</div></HTML>", "Sistema de conversión");
     }
 }

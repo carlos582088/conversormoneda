@@ -26,6 +26,8 @@ public class kelcel extends conversion_herencia {
     	BigDecimal resultado = valor.subtract(new BigDecimal ("273.15")).setScale(2, RoundingMode.HALF_UP);
 
         String resultadoFormateado = formatearResultado(resultado);
-        JOptionPane.showMessageDialog(null, "La conversión a Grados kelvin es de: " + resultadoFormateado, "Sistema de conversión", JOptionPane.PLAIN_MESSAGE);
+        estilo.MostrarMensajeDialog(null, "<HTML><b>La conversión a Grados Centigrados</b><br><div align=\"center\"> Es de : " + resultadoFormateado +"</div></HTML>", "Sistema de conversión");  
+        
+
     }
 }
