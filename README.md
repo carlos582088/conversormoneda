@@ -1,10 +1,9 @@
 # conversormoneda
 
-<p align="center">
-  <img src="imagenes/inicial.jpg" alt="Imagen 1" width="30%" style="margin-right: 80px;">
-  <img src="imagenes/seleccion.jpg" alt="Imagen 2" width="30%" style="margin-left: 80px;">
-</p>
-
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <img src="imagenes/inicial.jpg" alt="Imagen 1" width="30%" style="margin-right: 40px;">
+  <img src="imagenes/seleccion.jpg" alt="Imagen 2" width="30%" style="margin-left: 40px;">
+</div>
 
 
 
