@@ -1,14 +1,9 @@
 # conversormoneda
 
-
-<div style="display: flex;">
-  <div style="flex: 1;">
-    <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%;">
-  </div>
-  <div style="flex: 1; padding-left: 20px;">
-    <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 30%;">
-  </div>
-</div>
+<p align="center">
+  <img src="imagenes/inicial.jpg" alt="Imagen 1" width="30%" style="margin-right: 20px;">
+  <img src="imagenes/seleccion.jpg" alt="Imagen 2" width="30%">
+</p>
 
 
 
