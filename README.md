@@ -1,8 +1,8 @@
 # conversormoneda
 
 <div style="display: flex;">
-  <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%; margin-right: 200%;">
-  <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width:30%;margin-right: 20px;">
+  <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%; margin-right: 40px; margin-left: 20px;">
+  <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 30%; margin-right: 40px;">
 </div>
 
 
