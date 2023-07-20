@@ -1,4 +1,9 @@
 # conversormoneda
+<p align="center">
+  <img src="cambio.png" alt="Conversor de divisas" width="300">
+</p>
+
+
 Este proyecto es  un programa de conversión de monedas que te permite convertir entre diferentes divisas de manera fácil y rápida.
 
 Características principales
