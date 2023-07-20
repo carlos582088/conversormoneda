@@ -1,6 +1,6 @@
 # conversormoneda
 <p align="center">
-  <img src="cambio.png" alt="Conversor de divisas" width="300">
+  <img src="imagenes/inicial.jpg" alt="Conversor de divisas" width="300">
 </p>
 
 
