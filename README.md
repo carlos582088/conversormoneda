@@ -1,15 +1,14 @@
 # conversormoneda
 
-<table>
-  <tr>
-    <td>
-      <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%;">
-    </td>
-    <td style="padding-left: 20px;">
-      <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 30%;">
-    </td>
-  </tr>
-</table>
+
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%;">
+  </div>
+  <div style="flex: 1; padding-left: 20px;">
+    <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 30%;">
+  </div>
+</div>
 
 
 
