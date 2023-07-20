@@ -1,10 +1,16 @@
 # conversormoneda
 
-<div>
-  <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%;">
-  <br>
-  <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 30%;">
-</div>
+<table>
+  <tr>
+    <td>
+      <img src="imagenes/inicial.jpg" alt="Imagen 1" style="width: 30%;">
+    </td>
+    <td style="padding-left: 20px;">
+      <img src="imagenes/seleccion.jpg" alt="Imagen 2" style="width: 30%;">
+    </td>
+  </tr>
+</table>
+
 
 
 Este proyecto es  un programa de conversión de monedas que te permite convertir entre diferentes divisas de manera fácil y rápida.
