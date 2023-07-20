@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="imagenes/inicial.jpg" alt="Imagen 1" width="30%" style="margin-right: 10px;">
-  <img src="imagenes/seleccion.jpg" alt="Imagen 2" width="30%" style="margin-left: 10px;">
+  <img src="imagenes/seleccion.jpg" alt="Imagen 2" width="30%" style="margin-left: 80px;">
 </p>
 
 
